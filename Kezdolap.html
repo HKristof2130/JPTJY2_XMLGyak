@@ -3,50 +3,33 @@
 <html>
     <head>
         <title>Kezdőlap</title>
-        <style>
-            body{
-                background-image: url('bg.jpg'); 
-                background-size: cover;
-                text-emphasis-color: aqua;
-            }
-            div{
-                font-size: 28px;
-                display: flex;
-                margin: 20px;
-                padding: 20px;
-                justify-content: space-between;
-            }
-           
-        </style>
-
+        <link rel="stylesheet" href="../Style/style.css">
         
     </head>
 
     <body>
-        <center>
-            <h1 style="color: rgb(20, 255, 212);">Kezdőlap</h1>
-        </center>
-        
+
+        <header>
+            <h1 >Kezdőlap</h1>
+        </header>
+
         <main>
             <section>
-                <center>
-                    <a href="Kezdolap.html">
-                        <img src="infoepulet.jpg" alt="Informaitkai Intézet" width="400" height="400" />
-                    </a>
-                </center>
-                <div>
-                   <a href="OOP.html">Objektum Orientált Programozás</a>
-                   <a href="VALSZAM.html">Valószínűség számítás</a>
-                   <a href="OS.html">Operációs rendszerek</a>
-                <div>
+                <a href="Kezdolap.html">
+                    <img src="../Images/infoepulet.jpg" alt="Informaitkai Intézet" width="40%" height="45%" />
+                </a>
             </section>
-
-            <section>
-                <article>
-                    <iframe src="http://www.google.co.in" name="targetframe" allowTransparency="true" scrolling="no" frameborder="0" >
-                    </iframe>
-                </article>
-            </section>
+            
+            <div class="kezdolapDiv">
+                    <a href="OOP.html">Objektum Orientált Programozás</a>
+                    <a href="VALSZAM.html">Valószínűség számítás</a>
+                    <a href="OS.html">Operációs rendszerek</a>
+            </div>
+           
+            <article>
+                <p>Hello dear User welcome to to page!</p>
+            </article>
+            
         </main>
     </body>
 </html>
