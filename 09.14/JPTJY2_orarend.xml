@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<XY_orarend>
+
+
+    <ora id="1" tipus="Gyakorlat">
+        <targy>XML adatkezeles</targy>
+        <idopont>
+            <nap>Szerda</nap>
+            <kezdes>12</kezdes>
+            <befejezes>14</befejezes>
+        </idopont>
+        <helyszin>101</helyszin>
+        <oktato>Bednarik Lászlo</oktato>
+        <szak>Programtervező</szak>
+    </ora>
+
+    <ora id="2" tipus="Előadás">
+        <targy>XML adatkezeles</targy>
+        <idopont>
+            <nap>Kedd</nap>
+            <kezdes>12</kezdes>
+            <befejezes>14</befejezes>
+        </idopont>
+        <helyszin>32</helyszin>
+        <oktato>Bednarik Lászlo</oktato>
+        <szak>Programtervező</szak>
+    </ora>
+
+    <ora id="3" tipus="Előadás">
+        <targy>Webtech</targy>
+        <idopont>
+            <nap>Hetfő</nap>
+            <kezdes>8</kezdes>
+            <befejezes>10</befejezes>
+        </idopont>
+        <helyszin>103</helyszin>
+        <oktato>Agárdi Anita</oktato>
+        <szak>Programtervező</szak>
+    </ora>
+
+    <ora id="4" tipus="Gyakorlat">
+        <targy>Webtech</targy>
+        <idopont>
+            <nap>Hetfő</nap>
+            <kezdes>18</kezdes>
+            <befejezes>20</befejezes>
+        </idopont>
+        <helyszin>103</helyszin>
+        <oktato>Agárdi Anita</oktato>
+        <szak>Programtervező</szak>
+    </ora>
+
+    <ora id="5" tipus="Előadás">
+        <targy>Mesterséges Intelligencia</targy>
+        <idopont>
+            <nap>Kedd</nap>
+            <kezdes>9</kezdes>
+            <befejezes>12</befejezes>
+        </idopont>
+        <helyszin>2</helyszin>
+        <oktato>Kunné Tamás Judit</oktato>
+        <szak>Programtervező</szak>
+    </ora>
+
+    <ora id="6" tipus="Gyakorlat">
+        <targy>Mesterséges Intelligencia</targy>
+        <idopont>
+            <nap>Szerda</nap>
+            <kezdes>14</kezdes>
+            <befejezes>15</befejezes>
+        </idopont>
+        <helyszin>3</helyszin>
+        <oktato>Fazekas Levi</oktato>
+        <szak>Programtervező</szak>
+    </ora>
+
+    <ora id="7" tipus="Előadás">
+        <targy>Vállalati Információs rendszerek</targy>
+        <idopont>
+            <nap>Szerda</nap>
+            <kezdes>16</kezdes>
+            <befejezes>20</befejezes>
+        </idopont>
+        <helyszin>108</helyszin>
+        <oktato>Dr Sárvári László</oktato>
+        <szak>Programtervező</szak>
+    </ora>
+
+    <ora id="8" tipus="Előadás">
+        <targy>Algoritmusok és vizsgálatuk</targy>
+        <idopont>
+            <nap>Kedd</nap>
+            <kezdes>14</kezdes>
+            <befejezes>18</befejezes>
+        </idopont>
+        <helyszin>32</helyszin>
+        <oktato>Dr. Házy Attila</oktato>
+        <szak>Programtervező</szak>
+    </ora>
+
+</XY_orarend>

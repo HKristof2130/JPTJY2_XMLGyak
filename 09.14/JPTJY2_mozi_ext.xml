@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<mozi>
+    <film id="txn_nxm_2jb" mufaj="horror">
+        <rendezo id="nzk_4xm_2jb" nev="alex">
+            <gyerekszinesz>Laci</gyerekszinesz>
+            <musicalszinesz>Akos</musicalszinesz>
+            <szinkronszinesz>Sanyi</szinkronszinesz>
+        </rendezo>
+        <iro id="trv_4xm_2jb">
+            <producer>Arpi</producer>
+            <dramaturg>Kristof</dramaturg>
+            <operator>Boti</operator>
+        </iro>
+    </film>
+</mozi>

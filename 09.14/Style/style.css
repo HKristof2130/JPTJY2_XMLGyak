@@ -1,0 +1,34 @@
+body{
+    background-color: black;
+    color: whitesmoke;
+}
+
+header{
+    font-size: 50px;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+div{
+    height: auto;
+    width: 100%;
+    
+}
+
+div table{
+    border:  10px solid darkblue;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+    background-color: aqua;
+    color: black;
+}
+
+thead{
+    height: 40px;
+}
+
+td{
+    vertical-align: middle;
+    height: 30px;
+}
