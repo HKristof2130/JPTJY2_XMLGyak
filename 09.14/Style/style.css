@@ -26,9 +26,11 @@ div table{
 
 thead{
     height: 40px;
+    border: 2px solid black;
 }
 
 td{
     vertical-align: middle;
     height: 30px;
+    border: 2px solid black;
 }
