@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<konferencia>
+    <cím>Hogyan legyünk programozók?</cím>
+    <hallgatók>
+        <hallgató>
+            <név>Hegyesi Kristóf</név>
+            <lakcím>3521 Berkekkert utca 22.</lakcím>
+        </hallgató>
+    </hallgatók>
+    <helyszín>Miskolc Egyetemváros</helyszín>
+    <előadó>
+        <név>Nagy Szabolcs</név>
+        <adószám>123456789AB</adószám>
+        <lakcím>2200 Miskolc Fogalmamsincs kr. 69.</lakcím>    
+    </előadó>
+    <dátum>2000.11.20</dátum>
+</konferencia>
