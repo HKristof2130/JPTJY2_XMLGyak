@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- DOCTYPE part here-->
 
-<XY_kurzusfelvetel tanev="2022_2023 I." egyetem="ME">
+<HK_kurzusfelvetel tanev="2022_2023 I." egyetem="ME">
 
     <hallgato>
         <hnev>Hegyesi Kristóf</hnev>
@@ -36,4 +35,4 @@
         </kurzus>
     </kurzusok>
 
-</XY_kurzusfelvetel>
+</HK_kurzusfelvetel>

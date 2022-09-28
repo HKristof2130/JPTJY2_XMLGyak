@@ -1,0 +1,14 @@
+<!ELEMENT HK_kurzusfelvetel (hallgato,kurzusok)>
+    <!ATTLIST HK_kurzusfelvetel
+        tanev CDATA #REQUIRED
+        egyetem CDATA #FIXED "ME">
+
+<!ELEMENT hallgato (hnev,szulev,szak+)>
+    <!ELEMENT hnev (#PCDATA)>
+    <!ELEMENT szulev (#PCDATA)>
+    <!ELEMENT szak (#PCDATA)>
+
+
+
+
+
