@@ -1,0 +1,39 @@
+<!ELEMENT HKmodell (A+,AB+,B+,BC+,C+)>
+
+<!ELEMENT A (b+,c)>
+  <!ATTLIST A
+    a ID #REQUIRED>
+
+<!ELEMENT b (x,y)>
+
+<!ELEMENT x (#PCDATA)>
+
+<!ELEMENT y (#PCDATA)>
+
+<!ELEMENT c (d,e)>
+
+<!ELEMENT d (#PCDATA)>
+
+<!ELEMENT e (#PCDATA)>
+
+<!ELEMENT AB (cAB)>
+  <!ATTLIST AB 
+    aid IDREF #REQUIRED
+    bid IDREF #REQUIRED>
+
+<!ELEMENT cAB (#PCDATA)>
+
+<!ELEMENT B (b)>
+  <!ATTLIST B
+    a ID #REQUIRED>
+
+<!ELEMENT BC EMPTY>
+  <!ATTLIST BC 
+    bid IDREF #REQUIRED
+    cid IDREF #REQUIRED>
+
+<!ELEMENT C (bC)>
+  <!ATTLIST C
+    a ID #REQUIRED>
+
+<!ELEMENT bC (#PCDATA)>

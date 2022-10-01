@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE HKmodell SYSTEM "HK_ertodtd.dtd">
+
+<HKmodell>
+    
+<A a="a1">
+  <b>
+    <x> A:x adat 1</x>
+    <y> A:y adat 1</y>
+  </b>
+  <b>
+    <x> A:x adat 2</x>
+    <y> A:y adat 2</y>
+  </b>
+  <c>
+    <d> A:d adat I. </d>
+    <e> A:e adat I.</e>
+  </c>
+</A>
+
+<A a="a2">
+  <b>
+    <x> A:x adat 2</x>
+    <y> A:y adat 2</y>
+  </b>
+  <c>
+    <d> A:d adat II. </d>
+    <e> A:e adat II.</e>
+  </c>
+</A>
+
+<A a="a3">
+  <b>
+    <x> A:x adat 3</x>
+    <y> A:y adat 3</y>
+  </b>
+  <b>
+    <x> A:x adat 4</x>
+    <y> A:y adat 4</y>
+  </b>
+  <c>
+    <d> A:d adat III. </d>
+    <e> A:e adat III. </e>
+  </c>
+</A>
+
+<AB aid="a1" bid="b2">
+  <cAB> a1 b2 kapcsolat</cAB>
+</AB>
+
+<AB aid="a2" bid="b1">
+  <cAB> a1 b2 kapcsolat</cAB>
+</AB>
+
+<AB aid="a2" bid="b2">
+  <cAB> a1 b2 kapcsolat</cAB>
+</AB>
+
+<B a="b1">
+  <b>
+    <x> B:x adat 1</x>
+    <y> B:y adat 1</y>
+  </b>
+</B>
+
+<B a="b2">
+  <b>
+    <x> B:x adat 2</x>
+    <y> B:y adat 2</y>
+  </b>
+</B>
+
+<BC bid="b1" cid="c1" />
+<BC bid="b2" cid="c2" />
+<BC bid="b1" cid="c3" />
+
+<C a="c1">
+  <bC> C:b adat 1 </bC>
+</C>
+
+<C a="c2">
+  <bC> C:b adat 2 </bC>
+</C>
+
+<C a="c3">
+  <bC> C:b adat 3 </bC>
+</C>
+
+</HKmodell>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE HK_adatbazis SYSTEM "HK_adatbazis.dtd">
+ 
+<HK_adatbazis>
+
+  <dolgozo kod="abc">
+    <nev>Mek ELek</nev>
+    <fizetes>113000</fizetes>
+  </dolgozo>
+  
+  <dolgozo kod="bcd">
+    <nev>Kiss István</nev>
+    <fizetes>234000</fizetes>
+  </dolgozo>
+  
+  <dolgozo kod="cde">
+    <nev>Kis Juliska</nev>
+    <fizetes>275050</fizetes>
+  </dolgozo>
+  
+  <dolgozo kod="def">
+    <nev>Horvéth Lóránt</nev>
+    <fizetes>439030</fizetes>
+  </dolgozo>
+ 
+</HK_adatbazis>

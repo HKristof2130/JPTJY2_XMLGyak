@@ -4,11 +4,29 @@
         egyetem CDATA #FIXED "ME">
 
 <!ELEMENT hallgato (hnev,szulev,szak+)>
-    <!ELEMENT hnev (#PCDATA)>
-    <!ELEMENT szulev (#PCDATA)>
-    <!ELEMENT szak (#PCDATA)>
+    <!ATTLIST hallgato id ID #REQUIRED>
 
+<!ELEMENT hnev (#PCDATA)>
 
+<!ELEMENT szulev (#PCDATA)>
 
+<!ELEMENT szak (#PCDATA)>
+    <!ATTLIST szak evf CDATA #REQUIRED>
 
+<!ELEMENT kurzusok (kurzus*)>
 
+<!ELEMENT kurzus (kurzusnev,kredit,hely,idopont+,oktato?)>
+    <!ATTLIST kurzus
+        id ID #REQUIRED
+        nyelv CDATA #IMPLIED
+        jovahagyas CDATA "nem">
+
+<!ELEMENT kurzusnev (#PCDATA)>
+
+<!ELEMENT kredit (#PCDATA)>
+
+<!ELEMENT hely (#PCDATA)>
+
+<!ELEMENT idopont (#PCDATA)>
+
+<!ELEMENT oktato (#PCDATA)>
