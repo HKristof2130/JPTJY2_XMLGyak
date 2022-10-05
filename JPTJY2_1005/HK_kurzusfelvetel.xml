@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<HK_kurzusfelvetel tanev="2022_2023 I." egyetem="ME">
+
+    <hallgato>
+        <hnev>Hegyesi Kristóf</hnev>
+        <szulev>200-11-20</szulev>
+        <szak evf="5">Programtervező informatikus</szak>
+    </hallgato>
+
+    <kurzusok>
+        <kurzus id="GEIAL332-B">
+            <kurzusnev> Adatkezelés XML környezetben</kurzusnev>
+            <kredit>5</kredit>
+            <hely>XXXII.</hely>
+            <idopont>Kedd 12:00-13:00</idopont>
+            <oktato>Dr. Bednarik László</oktato>
+        </kurzus>
+
+        <kurzus id="GEIAK130-B">
+            <kurzusnev>Mesterséges intelligencia alapok</kurzusnev>
+            <kredit>5</kredit>
+            <hely>XXX.</hely>
+            <idopont>Kedd 9:00-12:00</idopont>
+            <oktato>Dr. Kunné Tamás Judit</oktato>
+        </kurzus>
+
+        <kurzus id="GEIAL331-B">
+            <kurzusnev>Webtechnológiák</kurzusnev>
+            <kredit>5</kredit>
+            <hely>XXX.</hely>
+            <idopont>Hétfő 8:00-10:00</idopont>
+            <oktato>Agárdi Anita</oktato>
+        </kurzus>
+    </kurzusok>
+
+</HK_kurzusfelvetel>

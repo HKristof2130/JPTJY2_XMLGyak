@@ -1,0 +1,48 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="HK_kurzusfelvetel">
+    <xs:complexType>
+      <xs:sequence>
+        
+      <xs:element name="hallgato">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="hnev"/>
+              <xs:element type="xs:string" name="szulev"/>
+              <xs:element name="szak">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute type="xs:byte" name="evf"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <xs:element name="kurzusok">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="kurzus" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="kurzusnev"/>
+                    <xs:element type="xs:byte" name="kredit"/>
+                    <xs:element type="xs:string" name="hely"/>
+                    <xs:element type="xs:string" name="idopont"/>
+                    <xs:element type="xs:string" name="oktato"/>
+                  </xs:sequence>
+                  <xs:attribute type="xs:string" name="id" use="optional"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        
+      </xs:sequence>
+      <xs:attribute type="xs:string" name="tanev"/>
+      <xs:attribute type="xs:string" name="egyetem"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
