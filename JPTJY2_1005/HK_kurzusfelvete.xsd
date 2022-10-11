@@ -1,48 +1,30 @@
-<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:element name="HK_kurzusfelvetel">
-    <xs:complexType>
-      <xs:sequence>
-        
-      <xs:element name="hallgato">
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element type="xs:string" name="hnev"/>
-              <xs:element type="xs:string" name="szulev"/>
-              <xs:element name="szak">
-                <xs:complexType>
-                  <xs:simpleContent>
-                    <xs:extension base="xs:string">
-                      <xs:attribute type="xs:byte" name="evf"/>
-                    </xs:extension>
-                  </xs:simpleContent>
-                </xs:complexType>
-              </xs:element>
-            </xs:sequence>
-          </xs:complexType>
-        </xs:element>
+<?xml version="1.0" encoding="UTF-8"?>
 
-        <xs:element name="kurzusok">
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element name="kurzus" maxOccurs="unbounded" minOccurs="0">
-                <xs:complexType>
-                  <xs:sequence>
-                    <xs:element type="xs:string" name="kurzusnev"/>
-                    <xs:element type="xs:byte" name="kredit"/>
-                    <xs:element type="xs:string" name="hely"/>
-                    <xs:element type="xs:string" name="idopont"/>
-                    <xs:element type="xs:string" name="oktato"/>
-                  </xs:sequence>
-                  <xs:attribute type="xs:string" name="id" use="optional"/>
-                </xs:complexType>
-              </xs:element>
-            </xs:sequence>
-          </xs:complexType>
-        </xs:element>
-        
-      </xs:sequence>
-      <xs:attribute type="xs:string" name="tanev"/>
-      <xs:attribute type="xs:string" name="egyetem"/>
-    </xs:complexType>
-  </xs:element>
+<xs:schema xmlns:ns="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+  <xs:simpleType nev="tanevTipus">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="\d{4}/\d{4}I(I)?"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType nev="egyetemTipus">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="ME"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType nev="idTipus">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="5"/>
+      <xs:maxLength value="10"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType nev="igenNemTipus">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="igen"/>
+      <xs:enumeration value="nem"/>
+    </xs:restriction>
+  </xs:simpleType>
 </xs:schema>
