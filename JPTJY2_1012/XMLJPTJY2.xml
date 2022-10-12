@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<vendeglatas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="JPTJY2_XMLSchema.xsd">
+
+    <etterem ekod="e1">
+        <nev>Trófea</nev>
+        <cim>
+            <varos>Budapest</varos>
+            <utca>Visegrádi</utca>
+            <hazszam>13</hazszam>
+        </cim>
+        <csillag>4</csillag>
+    </etterem>
+
+    <etterem ekod="e2">
+        <nev>Kard</nev>
+        <cim>
+            <varos>Miskolc</varos>
+            <utca>Berekkert</utca>
+            <hazszam>69</hazszam>
+        </cim>
+        <csillag>5</csillag>
+    </etterem>
+
+    <etterem ekod="e3">
+        <nev>Pajzs</nev>
+        <cim>
+            <varos>Veszprém</varos>
+            <utca>Király</utca>
+            <hazszam>11</hazszam>
+        </cim>
+        <csillag>3</csillag>
+    </etterem>
+
+    <vendeg vkod="v1">
+        <nev>Bartók Gábor</nev>
+        <eletkor>21</eletkor>
+        <cim>
+            <varos>Miskolc</varos>
+            <utca>Hidalatt</utca>
+            <hazszam>1</hazszam>
+        </cim>
+    </vendeg>
+
+    <vendeg vkod="v2">
+        <nev>Czobor Patrik</nev>
+        <eletkor>21</eletkor>
+        <cim>
+            <varos>Miskolc</varos>
+            <utca>Penthouse</utca>
+            <hazszam>65</hazszam>
+        </cim>
+    </vendeg>
+
+    <vendeg vkod="v3">
+        <nev>Fehér Lajos</nev>
+        <eletkor>19</eletkor>
+        <cim>
+            <varos>Miskolc</varos>
+            <utca>Giga</utca>
+            <hazszam>99</hazszam>
+        </cim>
+    </vendeg>
+
+    <foszakacs fkod="f1" e_f="e1">
+        <nev>Juhasz Marcell</nev>
+        <eletkor>22</eletkor>
+        <vegzettseg>master chef 1</vegzettseg>
+        <vegzettseg>master chef 2</vegzettseg>
+    </foszakacs>
+
+    <foszakacs fkod="f2" e_f="e2">
+        <nev>Hegyesi Kristóf</nev>
+        <eletkor>21</eletkor>
+        <vegzettseg>medior chef</vegzettseg>
+        <vegzettseg>master chef 1</vegzettseg>
+    </foszakacs>
+
+    <foszakacs fkod="f3" e_f="e3">
+        <nev>Paszternák Ádám</nev>
+        <eletkor>41</eletkor>
+        <vegzettseg>master chef 3</vegzettseg>
+        <vegzettseg>master chef 3*</vegzettseg>
+    </foszakacs>
+
+    <szakacs szkod="sz1">
+        <nev> Nyíri Beja</nev>
+        <eletkor>21</eletkor>
+        <vegzettseg>rookie chef</vegzettseg>
+        <vegzettseg>medior chef</vegzettseg>
+    </szakacs>
+
+    <szakacs szkod="sz2">
+        <nev> Barabás Marcell</nev>
+        <eletkor>21</eletkor>
+        <vegzettseg>medior chef</vegzettseg>
+        <vegzettseg>senior chef</vegzettseg>
+    </szakacs>
+
+    <szakacs szkod="sz3">
+        <nev> Ganyu Máté</nev>
+        <eletkor>35</eletkor>
+        <vegzettseg>senior chef</vegzettseg>
+        <vegzettseg>senior chef 1</vegzettseg>
+    </szakacs>
+
+    <rendeles e_v_e="e1" e_v_v="v1">
+        <osszeg>9000</osszeg>
+        <etel>Steak</etel>
+    </rendeles>
+
+    <rendeles e_v_e="e2" e_v_v="v2">
+        <osszeg>19000</osszeg>
+        <etel>Kaviár</etel>
+    </rendeles>
+
+    <rendeles e_v_e="e3" e_v_v="v3">
+        <osszeg>3000</osszeg>
+        <etel>Pizza</etel>
+    </rendeles>
+
+</vendeglatas>
