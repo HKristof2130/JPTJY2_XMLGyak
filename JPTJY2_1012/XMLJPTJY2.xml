@@ -32,36 +32,6 @@
         <csillag>3</csillag>
     </etterem>
 
-    <vendeg vkod="v1">
-        <nev>Bartók Gábor</nev>
-        <eletkor>21</eletkor>
-        <cim>
-            <varos>Miskolc</varos>
-            <utca>Hidalatt</utca>
-            <hazszam>1</hazszam>
-        </cim>
-    </vendeg>
-
-    <vendeg vkod="v2">
-        <nev>Czobor Patrik</nev>
-        <eletkor>21</eletkor>
-        <cim>
-            <varos>Miskolc</varos>
-            <utca>Penthouse</utca>
-            <hazszam>65</hazszam>
-        </cim>
-    </vendeg>
-
-    <vendeg vkod="v3">
-        <nev>Fehér Lajos</nev>
-        <eletkor>19</eletkor>
-        <cim>
-            <varos>Miskolc</varos>
-            <utca>Giga</utca>
-            <hazszam>99</hazszam>
-        </cim>
-    </vendeg>
-
     <foszakacs fkod="f1" e_f="e1">
         <nev>Juhasz Marcell</nev>
         <eletkor>22</eletkor>
@@ -104,6 +74,66 @@
         <vegzettseg>senior chef 1</vegzettseg>
     </szakacs>
 
+    <gyakornok gykod="gy1">
+        <nev>Kis Pista</nev>
+        <gyakorlat>
+            <kezdete>08:00</kezdete>
+            <idotartam>8</idotartam>
+        </gyakorlat>
+        <muszak>Hetfo N</muszak>
+        <muszak>Pentek N</muszak>
+    </gyakornok>
+
+    <gyakornok gykod="gy2">
+        <nev>Nagy László</nev>
+        <gyakorlat>
+            <kezdete>18:00</kezdete>
+            <idotartam>8</idotartam>
+        </gyakorlat>
+        <muszak>Hetfo E</muszak>
+        <muszak>Szerda E</muszak>
+    </gyakornok>
+
+    <gyakornok gykod="gy3">
+        <nev>Varga Ágnes</nev>
+        <gyakorlat>
+            <kezdete>10:00</kezdete>
+            <idotartam>6</idotartam>
+        </gyakorlat>
+        <muszak>Kedd N</muszak>
+        <muszak>Csütörtök N</muszak>
+    </gyakornok>
+
+    <vendeg vkod="v1">
+        <nev>Bartók Gábor</nev>
+        <eletkor>21</eletkor>
+        <cim>
+            <varos>Miskolc</varos>
+            <utca>Hidalatt</utca>
+            <hazszam>1</hazszam>
+        </cim>
+    </vendeg>
+
+    <vendeg vkod="v2">
+        <nev>Czobor Patrik</nev>
+        <eletkor>21</eletkor>
+        <cim>
+            <varos>Miskolc</varos>
+            <utca>Penthouse</utca>
+            <hazszam>65</hazszam>
+        </cim>
+    </vendeg>
+
+    <vendeg vkod="v3">
+        <nev>Fehér Lajos</nev>
+        <eletkor>19</eletkor>
+        <cim>
+            <varos>Miskolc</varos>
+            <utca>Giga</utca>
+            <hazszam>99</hazszam>
+        </cim>
+    </vendeg>
+    
     <rendeles e_v_e="e1" e_v_v="v1">
         <osszeg>9000</osszeg>
         <etel>Steak</etel>

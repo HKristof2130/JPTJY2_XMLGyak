@@ -1,5 +1,14 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <xs:element name="vendeglatas">
-        
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="etterem" type="etteremTipus" maxOccurs="unbounded"></xs:element>
+                <xs:element name="foszakacs" type="foszakacsTipus" maxOccurs="unbounded"></xs:element>
+                <xs:element name="szakacs" type="szakacsTipus" maxOccurs="unbounded"></xs:element>
+                <xs:element name="gyakornok" type="gyakornokTipus" maxOccurs="unbounded"></xs:element>                <xs:element name="etterem" type="etteremTipus" maxOccurs="unbounded"></xs:element>
+                <xs:element name="vendeg" type="vendegTipus" maxOccurs="unbounded"></xs:element>
+                <xs:element name="rendeles" type="rendelesTipus" maxOccurs="unbounded"></xs:element>
+            </xs:sequence>
+        </xs:complexType>
     </xs:element>
 </xs:schema>
