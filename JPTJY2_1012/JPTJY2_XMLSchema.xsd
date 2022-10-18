@@ -1,14 +1,95 @@
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+    <xs:simpleType name="etteremTipus">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="2"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="foszakacsTipus">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="2"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="szakacsTipus">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="2"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="gyakornokTipus">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="2"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="vendegekTipus">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="2"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="rendelesekTipus">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="2"/>
+        </xs:restriction>
+    </xs:simpleType>
+
     <xs:element name="vendeglatas">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="etterem" type="etteremTipus" maxOccurs="unbounded"></xs:element>
-                <xs:element name="foszakacs" type="foszakacsTipus" maxOccurs="unbounded"></xs:element>
-                <xs:element name="szakacs" type="szakacsTipus" maxOccurs="unbounded"></xs:element>
-                <xs:element name="gyakornok" type="gyakornokTipus" maxOccurs="unbounded"></xs:element>                <xs:element name="etterem" type="etteremTipus" maxOccurs="unbounded"></xs:element>
-                <xs:element name="vendeg" type="vendegTipus" maxOccurs="unbounded"></xs:element>
-                <xs:element name="rendeles" type="rendelesTipus" maxOccurs="unbounded"></xs:element>
+                <xs:element name="etterem" type="etteremTipus" maxOccurs="unbounded"/>
+                <xs:element name="foszakacs" type="foszakacsTipus" maxOccurs="unbounded"/>
+                <xs:element name="szakacs" type="szakacsTipus" maxOccurs="unbounded"/>
+                <xs:element name="gyakornok" type="gyakornokTipus" maxOccurs="unbounded"/>
+                <xs:element name="vendegek" type="vendegekTipus" maxOccurs="unbounded"/>
+                <xs:element name="rendelesek" type="rendelesekTipus" maxOccurs="unbounded"/>
             </xs:sequence>
         </xs:complexType>
     </xs:element>
+
+    <!-- Elsődleges Kulcsok -->
+    <xs:key name="etterem_kulcs">
+        <xs:selector xpath="etterem" />
+        <xs:field xpath="@ekod" />
+    </xs:key>
+    <xs:key name="foszakacs_kulcs">
+        <xs:selector xpath="foszakacs" />
+        <xs:field xpath="@fkod" />
+    </xs:key>
+    <xs:key name="szakacs_kulcs">
+        <xs:selector xpath="szakacs" />
+        <xs:field xpath="@szkod" />
+    </xs:key>
+    <xs:key name="gyakornok_kulcs">
+        <xs:selector xpath="gyakornok" />
+        <xs:field xpath="@gykod" />
+    </xs:key>
+    <xs:key name="vendeg_kulcs">
+        <xs:selector xpath="vendeg" />
+        <xs:field xpath="@vkod" />
+    </xs:key>
+
+    <!-- Idegen Kulcsok-->
+    <xs:keyref refer="etterem_kulcs" name="etterem_idegen_kulcs">
+        <xs:selector xpath="rendeles" />
+        <xs:field xpath="@e_v_e" />
+    </xs:keyref>
+    <xs:keyref refer="vendeg_kulcs" name="vendeg_idegen_kulcs">
+        <xs:selector xpath="rendeles" />
+        <xs:field xpath="@e_v_v" />
+    </xs:keyref>
+    <xs:keyref refer="etterem_kulcs" name="foszakacs_idegen_kulcs">
+        <xs:selector xpath="etterem" />
+        <xs:field xpath="@e_f" />
+    </xs:keyref>
+    <xs:keyref refer="etterem_kulcs" name="szakacs_idegen_kulcs">
+        <xs:selector xpath="etterem" />
+        <xs:field xpath="@e_sz" />
+    </xs:keyref>
+    <xs:keyref refer="etterem_kulcs" name="gyakornok_idegen_kulcs">
+        <xs:selector xpath="etterem" />
+        <xs:field xpath="@e_gy" />
+    </xs:keyref>
+
+
+
 </xs:schema>

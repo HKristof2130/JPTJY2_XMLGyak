@@ -53,28 +53,28 @@
         <vegzettseg>master chef 3*</vegzettseg>
     </foszakacs>
 
-    <szakacs szkod="sz1">
+    <szakacs szkod="sz1" e_sz="e1">
         <nev> Nyíri Beja</nev>
         <eletkor>21</eletkor>
         <vegzettseg>rookie chef</vegzettseg>
         <vegzettseg>medior chef</vegzettseg>
     </szakacs>
 
-    <szakacs szkod="sz2">
+    <szakacs szkod="sz2" e_sz="e2">
         <nev> Barabás Marcell</nev>
         <eletkor>21</eletkor>
         <vegzettseg>medior chef</vegzettseg>
         <vegzettseg>senior chef</vegzettseg>
     </szakacs>
 
-    <szakacs szkod="sz3">
+    <szakacs szkod="sz3" e_sz="e3">
         <nev> Ganyu Máté</nev>
         <eletkor>35</eletkor>
         <vegzettseg>senior chef</vegzettseg>
         <vegzettseg>senior chef 1</vegzettseg>
     </szakacs>
 
-    <gyakornok gykod="gy1">
+    <gyakornok gykod="gy1" e_gy="e1">
         <nev>Kis Pista</nev>
         <gyakorlat>
             <kezdete>08:00</kezdete>
@@ -84,7 +84,7 @@
         <muszak>Pentek N</muszak>
     </gyakornok>
 
-    <gyakornok gykod="gy2">
+    <gyakornok gykod="gy2" e_gy="e2">
         <nev>Nagy László</nev>
         <gyakorlat>
             <kezdete>18:00</kezdete>
@@ -94,7 +94,7 @@
         <muszak>Szerda E</muszak>
     </gyakornok>
 
-    <gyakornok gykod="gy3">
+    <gyakornok gykod="gy3" e_gy="e3">
         <nev>Varga Ágnes</nev>
         <gyakorlat>
             <kezdete>10:00</kezdete>
