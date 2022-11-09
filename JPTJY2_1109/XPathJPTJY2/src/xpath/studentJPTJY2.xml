@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<class>
+    <student id="1">
+        <keresztnev>Gabor</keresztnev>
+        <vezeteknev>Bartók</vezeteknev>
+        <becenev>Vanzer</becenev>
+        <kor>22</kor>
+    </student>
+    <student id="2">
+        <keresztnev>Marcell</keresztnev>
+        <vezeteknev>Juhász</vezeteknev>
+        <becenev>Öcsi</becenev>
+        <kor>21</kor>
+    </student>
+    <student id="3">
+        <keresztnev>Beata</keresztnev>
+        <vezeteknev>Nyíri</vezeteknev>
+        <becenev>Beja</becenev>
+        <kor>20</kor>
+    </student>
+    <student id="4">
+        <keresztnev>Kristof</keresztnev>
+        <vezeteknev>Hegyesi</vezeteknev>
+        <becenev>LeBron</becenev>
+        <kor>21</kor>
+    </student>
+</class>
