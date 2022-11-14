@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<nba>
+    <szezon sz_id="1">
+        <nevezettcsapatok_szama></nevezettcsapatok_szama>
+        <teljes_szezon></teljes_szezon>
+        <idotartam>
+            <kezdet></kezdet>
+            <veg></veg>
+        </idotartam>
+    </szezon>
+
+    <csapat cs_id="1">
+        <nev></nev>
+        <arena></arena>
+        <bajnoki_cimek></bajnoki_cimek>
+    </csapat>
+
+    <edzo e_id="1">
+        <nev></nev>
+        <csapat></csapat>
+        <aktiv_szezon></aktiv_szezon>
+    </edzo>
+
+    <stabtag s_id="1">
+        <nev></nev>
+        <csapat></csapat>
+        <beosztas></beosztas>
+    </stabtag>
+
+    <jatekos j_id="1">
+        <nev></nev>
+        <csapat></csapat>
+        <kor></kor>
+        <poizicio></poizicio>
+    </jatekos>
+</nba>
