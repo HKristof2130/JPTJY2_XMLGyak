@@ -2,7 +2,7 @@
 
 <!--Az nba-ben játszó/dolgozó személyek -->
 
-<nba>
+<nba xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="XMLSchemaJPTJY2.xsd">
 
     <!--Az nba-ben lejegyzett idények -->
 
