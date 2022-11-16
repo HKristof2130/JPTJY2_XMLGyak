@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet href="studentJPTJY2.xsl" type="text/xsl"?>
+
+<class>
+    <student id="1">
+        <vezeteknev>Hegyesi</vezeteknev>
+        <keresztnev>Kristof</keresztnev>
+        <becenev>Krisi</becenev>
+        <kor>21</kor>
+        <osztondij>30000</osztondij>
+    </student>
+
+    <student id="2">
+        <vezeteknev>Juhász</vezeteknev>
+        <keresztnev>Marcell</keresztnev>
+        <becenev>MRC</becenev>
+        <kor>22</kor>
+        <osztondij>50000</osztondij>
+    </student>
+
+    <student id="3">
+        <vezeteknev>Bartok</vezeteknev>
+        <keresztnev>Gabor</keresztnev>
+        <becenev>Buta</becenev>
+        <kor>22</kor>
+        <osztondij>0</osztondij>
+    </student>
+</class>
