@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="42633e1e-7282-4840-b479-8c979e792df6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/Féléves_feladat.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DOMParseJPTJY2/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DOMParseJPTJY2/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DOMParseJPTJY2/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DOMParseJPTJY2/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DOMParseJPTJY2/DOMParseJPTJY2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DOMParseJPTJY2/XMLJPTJY2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DOMParseJPTJY2/XMLSchemaJPTJY2.xsd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DOMParseJPTJY2/src/domparse_jptjy2/DomReadJPTJY2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DOMParseJPTJY2/src/domparse_jptjy2/DomWriteJPTJY2.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2I6ILkVhpS0mwZQOf1EK3LUUq4Z" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Kristóf/JPTJY2_XMLGyak/Féléves_feladat&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="42633e1e-7282-4840-b479-8c979e792df6" name="Changes" comment="" />
+      <created>1669495554899</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1669495554899</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
