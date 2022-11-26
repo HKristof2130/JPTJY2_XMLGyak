@@ -1,0 +1,93 @@
+
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="nba" type="nbaType">
+  </xs:element>
+
+  <xs:complexType name="idotartamType">
+    <xs:sequence>
+      <xs:element type="xs:date" name="kezdet"/>
+      <xs:element type="xs:date" name="veg"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="szezonType">
+    <xs:sequence>
+      <xs:element type="xs:int" name="nevezettcsapatok_szama"/>
+      <xs:element type="xs:string" name="teljes_szezon"/>
+      <xs:element type="idotartamType" name="idotartam"/>
+    </xs:sequence>
+    <xs:attribute type="xs:int" name="sz_id" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="csapatType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="nev"/>
+      <xs:element type="xs:string" name="arena"/>
+      <xs:element type="xs:int" name="bajnoki_cimek"/>
+    </xs:sequence>
+    <xs:attribute type="xs:int" name="cs_id" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="edzoType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="nev"/>
+      <xs:element type="xs:string" name="csapat"/>
+      <xs:element type="xs:int" name="aktiv_szezon"/>
+    </xs:sequence>
+    <xs:attribute type="xs:int" name="e_id" use="required"/>
+    <xs:attribute type="xs:int" name="cs_e" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="stabtagType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="nev"/>
+      <xs:element type="xs:string" name="csapat"/>
+      <xs:element type="xs:string" name="beosztas"/>
+    </xs:sequence>
+    <xs:attribute type="xs:int" name="s_id" use="required"/>
+    <xs:attribute type="xs:int" name="cs_s" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="jatekosType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="nev"/>
+      <xs:element type="xs:string" name="csapat"/>
+      <xs:element type="xs:byte" name="kor"/>
+      <xs:element type="xs:string" name="pozicio" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute type="xs:int" name="j_id" use="required"/>
+    <xs:attribute type="xs:int" name="cs_j" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="nevezett_csapatType">
+    <xs:sequence>
+      <xs:element type="xs:byte" name="szezon_szama"/>
+      <xs:element type="xs:string" name="csapat_neve"/>
+    </xs:sequence>
+    <xs:attribute type="xs:int" name="sz_a_id" use="required"/>
+    <xs:attribute type="xs:int" name="sz_n_id" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="nbaType">
+    <xs:choice maxOccurs="unbounded">
+      <xs:element type="szezonType" name="szezon" maxOccurs="unbounded" minOccurs="3">
+      </xs:element>
+
+      <xs:element type="csapatType" name="csapat" maxOccurs="unbounded" minOccurs="3">
+      </xs:element>
+
+      <xs:element type="edzoType" name="edzo" maxOccurs="unbounded" minOccurs="3">
+      </xs:element>
+
+      <xs:element type="stabtagType" name="stabtag" maxOccurs="unbounded" minOccurs="3">
+      </xs:element>
+
+      <xs:element type="jatekosType" name="jatekos" maxOccurs="unbounded" minOccurs="3">
+      </xs:element>
+
+      <xs:element type="nevezett_csapatType" name="nevezett_csapat" maxOccurs="unbounded" minOccurs="3">
+      </xs:element>
+
+    </xs:choice>
+  </xs:complexType>
+</xs:schema>

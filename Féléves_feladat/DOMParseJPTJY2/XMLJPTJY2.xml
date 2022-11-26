@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--Az nba-ben játszó/dolgozó személyek -->
+
+<nba xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="XMLSchemaJPTJY2.xsd">
+
+    <!--Az nba-ben lejegyzett idények -->
+
+    <szezon sz_id="1">
+        <nevezettcsapatok_szama>30</nevezettcsapatok_szama>
+        <teljes_szezon>Igen</teljes_szezon>
+        <idotartam>
+            <kezdet>2021-08-03</kezdet>
+            <veg>2022-06-14</veg>
+        </idotartam>
+    </szezon>
+
+    <szezon sz_id="2">
+        <nevezettcsapatok_szama>30</nevezettcsapatok_szama>
+        <teljes_szezon>Nem</teljes_szezon>
+        <idotartam>
+            <kezdet>2019-08-07</kezdet>
+            <veg>2020-10-13</veg>
+        </idotartam>
+    </szezon>
+
+    <szezon sz_id="3">
+        <nevezettcsapatok_szama>28</nevezettcsapatok_szama>
+        <teljes_szezon>Nem</teljes_szezon>
+        <idotartam>
+            <kezdet>2010-11-04</kezdet>
+            <veg>2011-06-24</veg>
+        </idotartam>
+    </szezon>
+
+    <!--Az nba-ben lejegyzett csapatok -->
+
+    <csapat cs_id="1">
+        <nev>Cleveland Cavaliers</nev>
+        <arena>Rocket Morgtage Fieldhouse</arena>
+        <bajnoki_cimek>1</bajnoki_cimek>
+    </csapat>
+
+    <csapat cs_id="2">
+        <nev>Miami Heat</nev>
+        <arena>FTX Arena</arena>
+        <bajnoki_cimek>3</bajnoki_cimek>
+    </csapat>
+
+    <csapat cs_id="3">
+        <nev>Dallas Mavericks</nev>
+        <arena>American Airlines Center</arena>
+        <bajnoki_cimek>1</bajnoki_cimek>
+    </csapat>
+
+    <!--Az nba-ben egyes csapatok vezetodezoje -->
+
+    <edzo e_id="1" cs_e="1">
+        <nev>J.B Bickerstaff</nev>
+        <csapat>Clevleand Cavaliers</csapat>
+        <aktiv_szezon>3</aktiv_szezon>
+    </edzo>
+
+    <edzo e_id="2" cs_e="3">
+        <nev>Jason Kidd</nev>
+        <csapat>Dallas Mavericks</csapat>
+        <aktiv_szezon>2</aktiv_szezon>
+    </edzo>
+
+    <edzo e_id="3" cs_e="2">
+        <nev>Erik Spoelstra</nev>
+        <csapat>Miami Heat</csapat>
+        <aktiv_szezon>15</aktiv_szezon>
+    </edzo>
+
+    <!-- Az nba-ben egyes csapatokhoz tartozó stábtag-->
+
+    <stabtag s_id="1" cs_s="2">
+        <nev>Chris Quinn</nev>
+        <csapat>Miami Heat</csapat>
+        <beosztas>Assistant Coach</beosztas>
+    </stabtag>
+
+    <stabtag s_id="2" cs_s="2">
+        <nev>Andy Elisburg</nev>
+        <csapat>Miami Heat</csapat>
+        <beosztas>Senior Vice President</beosztas>
+    </stabtag>
+
+    <stabtag s_id="3" cs_s="1">
+        <nev>Luke Walton</nev>
+        <csapat>Cleveland Cavaliers</csapat>
+        <beosztas>Assistant Coach</beosztas>
+    </stabtag>
+
+    <!-- Az nba-ben az egyes csapatokban játszó játékos-->
+
+    <jatekos j_id="1" cs_j="1">
+        <nev>Donovan Mitchell</nev>
+        <csapat>Cleveland Cavaliers</csapat>
+        <kor>25</kor>
+        <pozicio>SG</pozicio>
+        <pozicio>PG</pozicio>
+    </jatekos>
+
+    <jatekos j_id="2" cs_j="2">
+        <nev>Luka Doncic</nev>
+        <csapat>Dallas Mavericks</csapat>
+        <kor>23</kor>
+        <pozicio>PG</pozicio>
+        <pozicio>SF</pozicio>
+    </jatekos>
+
+    <jatekos j_id="3" cs_j="1">
+        <nev>Evan Mobley</nev>
+        <csapat>Cleveland Cavaliers</csapat>
+        <kor>22</kor>
+        <pozicio>PF</pozicio>
+        <pozicio>C</pozicio>
+    </jatekos>
+
+    <!-- Az nba-be az adott szezonba benevezett csapat-->
+    
+    <nevezett_csapat sz_a_id="1" sz_n_id="1">
+        <szezon_szama>73</szezon_szama>
+        <csapat_neve>Cleveland Cavaliers</csapat_neve>
+    </nevezett_csapat>
+
+    <nevezett_csapat sz_a_id="1" sz_n_id="3">
+        <szezon_szama>73</szezon_szama>
+        <csapat_neve>Dallas Mavericks</csapat_neve>
+    </nevezett_csapat>
+
+    <nevezett_csapat sz_a_id="1" sz_n_id="2">
+        <szezon_szama>73</szezon_szama>
+        <csapat_neve>Miami Heat</csapat_neve>
+    </nevezett_csapat>
+</nba>
