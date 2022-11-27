@@ -1,4 +1,4 @@
-package domparse_jptjy2;
+package hu_domparse_jptjy2;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
