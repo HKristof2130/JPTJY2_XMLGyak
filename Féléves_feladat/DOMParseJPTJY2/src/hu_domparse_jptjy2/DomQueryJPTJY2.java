@@ -25,8 +25,10 @@ public class DomQueryJPTJY2 {
 
 
     public static void main(String[] args) {
+        DomQuery();
+    }
 
-
+    public static void DomQuery(){
         try {
             DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder dBuilder;
