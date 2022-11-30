@@ -1,0 +1,61 @@
+{ "_id": "JPTJY2",
+    "vizsgak":{
+        "vizsga":[
+            {
+                "kurzus": "Számítógépes Grafika",
+                "helyszin": "III.E",
+                "idopont": {
+                    "nap": "Hétfő",
+                    "tol": "9:00",
+                    "ig": "12:00"
+                },
+                "oktato": "Dr. Juhász Imre",
+                "jegy": 3
+            },
+            {
+                "kurzus": "Numerikus Analízis",
+                "helyszin": "210",
+                "idopont": {
+                    "nap": "Kedd",
+                    "tol": "10:00",
+                    "ig": "12:00"
+                },
+                "oktato": "Dr. Karácsony Zsolt",
+                "jegy": 5
+            },
+            {
+                "kurzus": "Párhuzamos Algoritmusok",
+                "helyszin": "XXII.E",
+                "idopont": {
+                    "nap": "Csütörtök",
+                    "tol": "14:00",
+                    "ig": "16:00"
+                },
+                "oktato": "Piller Imre",
+                "jegy": 5
+            },
+            {
+                "kurzus": "Autómaták és Formális Nyelvek",
+                "helyszin": "XXXII.E",
+                "idopont": {
+                    "nap": "Kedd",
+                    "tol": "8:00",
+                    "ig": "10:00"
+                },
+                "oktato": "Dr. Radaleczki Sándor",
+                "jegy": 2
+            },
+            {
+                "kurzus": "Optimalizálás",
+                "helyszin": "XXXVII.E",
+                "idopont": {
+                    "nap": "Szerda",
+                    "tol": "10:00",
+                    "ig": "12:00"
+                },
+                "oktato": "Dr. Körei Attila",
+                "jegy": 2
+            }
+        ]
+    }
+}

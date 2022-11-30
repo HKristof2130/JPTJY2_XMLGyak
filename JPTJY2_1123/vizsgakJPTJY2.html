@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function loadXMLDoc(filename)
+{
+    if (window.ActiveXObject)
+    {
+        xhttp = new ActiveXObject("Msxml2.XMLHTTP");
+    }
+    else 
+    {
+        xhttp = new XMLHttpRequest();
+    }
+    xhttp.open("GET", filename, false);
+    xhttp.send("");
+    return xhttp.responseXML;
+}
+
+function displayResult()
+{
+    xml = loadXMLDoc("vizsgakJPTJY2.xml");
+    xsl = loadXMLDoc("vizsgakJPTJY2.xsl");
+    if (document.implementation && document.implementation.createDocument)
+    {
+        xsltProcessor = new XSLTProcessor();
+        xsltProcessor.importStylesheet(xsl);
+        resultDocument = xsltProcessor.transformToFragment(xml, document);
+        document.getElementById("example").appendChild(resultDocument);
+    }
+}
+</script>
+</head>
+<body onload="displayResult()">
+<div id="example">
+</body>
+</html>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<JPTJY2>
+    <vizsgak>
+        <vizsga>
+            <kurzus>Számítógépes Grafika</kurzus>
+            <helyszin>III.E</helyszin>
+            <idopont>
+                <nap>Hétfő</nap>
+                <tol>9:00</tol>
+                <ig>12:00</ig>
+            </idopont>
+            <oktato>Dr. Juhász Imre</oktato>
+            <jegy>5</jegy>
+        </vizsga>
+        <vizsga>
+            <kurzus>Numerikus Analízis</kurzus>
+            <helyszin>210</helyszin>
+            <idopont>
+                <nap>Kedd</nap>
+                <tol>10:00</tol>
+                <ig>12:00</ig>
+            </idopont>
+            <oktato>Dr. Karácsony Zsolt</oktato>
+            <jegy>5</jegy>
+        </vizsga>
+        <vizsga>
+            <kurzus>Párhuzamos Algoritmusok</kurzus>
+            <helyszin>XXII.E</helyszin>
+            <idopont>
+                <nap>Csütörtök</nap>
+                <tol>14:00</tol>
+                <ig>16:00</ig>
+            </idopont>
+            <oktato>Piller Imre</oktato>
+            <jegy>5</jegy>
+        </vizsga>
+        <vizsga>
+            <kurzus>Autómaták és Formális Nyelvek</kurzus>
+            <helyszin>XXXII.E</helyszin>
+            <idopont>
+                <nap>Kedd</nap>
+                <tol>8:00</tol>
+                <ig>10:00</ig>
+            </idopont>
+            <oktato>Dr. Radaleczki Sándor</oktato>
+            <jegy>4</jegy>
+        </vizsga>
+        <vizsga>
+            <kurzus>Optimalizálás</kurzus>
+            <helyszin>XXXVII.E</helyszin>
+            <idopont>
+                <nap>Szerda</nap>
+                <tol>10:00</tol>
+                <ig>12:00</ig>
+            </idopont>
+            <oktato>Dr. Körei Attila</oktato>
+            <jegy>2</jegy>
+        </vizsga>
+    </vizsgak>
+</JPTJY2>
