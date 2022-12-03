@@ -15,22 +15,18 @@ import java.io.IOException;
 
 public class DomReadJPTJY2 {
     public static void main(String[] args) {
-
-
         DomReader();
-
     }
 
     public static void  DomReader(){
-
         readSzezon();
         readCsapat();
         readEdzo();
         readStabtag();
         readJatekos();
-
     }
 
+    //kiolvasom az összes játékost
     private static void readJatekos(){
         DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
 
@@ -80,6 +76,7 @@ public class DomReadJPTJY2 {
         }
     }
 
+    //kiolvasom az összes stábtagot
     private static void readStabtag(){
         DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
 
@@ -126,6 +123,7 @@ public class DomReadJPTJY2 {
         }
     }
 
+    //kiolvasom az összes edzőt
     private static void readEdzo(){
         DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
 
@@ -173,6 +171,8 @@ public class DomReadJPTJY2 {
             e.printStackTrace();
         }
     }
+
+    //kiolvasom az összes csapatot
     private  static void readCsapat(){
 
         DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
@@ -220,6 +220,7 @@ public class DomReadJPTJY2 {
         }
     }
 
+    //kiolvasom az összes szezont
     private static void readSzezon(){
 
         DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();

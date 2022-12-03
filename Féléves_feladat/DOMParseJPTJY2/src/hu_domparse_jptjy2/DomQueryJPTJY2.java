@@ -39,21 +39,26 @@ public class DomQueryJPTJY2 {
 
             document.getDocumentElement().normalize();
 
+            //az összes játékos lekérdezése
             getAllPlayers();
 
+            // input, játékos lekérés megadott Id alapján
             System.out.println("Search a player by id");
             Scanner input = new Scanner(System.in);
             String id = input.nextLine();
             getPlayerById(id);
 
+            // input, csapat lekérés megadott csapatnév alapján
             System.out.println("Search team by name");
             String team = input.nextLine();
             getTeamByName(team);
 
+            // input, játékosok lekérése pozíció alapján
             System.out.println("Search player by position");
             String position = input.nextLine();
             getPlayersByPosition(position);
 
+            // input, stábtagok lekérése beosztás alapján
             System.out.println("Search staff by role");
             String role = input.nextLine();
             getStaffByRole(role);

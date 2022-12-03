@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bd212061-7c8e-4723-a84c-743cb814ad4d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../JSONJPTJY2.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JSONJPTJY2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jptjy2/ObjectJPTJY2.java" afterDir="false" />
-    </list>
+    <list default="true" id="bd212061-7c8e-4723-a84c-743cb814ad4d" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,7 +33,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Kristóf/JPTJY2_XMLGyak/JPTJY2_1130/JSONParseJPTJY2",
+    "last_opened_file_path": "C:/Kristóf/JPTJY2_XMLGyak/Féléves_feladat/DOMParseJPTJY2",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>

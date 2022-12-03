@@ -51,6 +51,8 @@ public class DomModifyJPTJY2 {
 
         modifyStaffMembersRoleToHeadCoach();
 
+        deleteAgeElementFromEveryPlayer();
+
         try (FileOutputStream output = new FileOutputStream("ModifiedXMLJPTJY2.xml")) {
             writeXml(doc, output);
         } catch (TransformerException e) {
@@ -58,6 +60,7 @@ public class DomModifyJPTJY2 {
         }
     }
 
+    // kitöröljük a kor elemet minden játékosnál
     private static void deleteAgeElementFromEveryPlayer(){
 
         NodeList jatekosList = doc.getElementsByTagName("jatekos");
@@ -82,6 +85,7 @@ public class DomModifyJPTJY2 {
         }
     }
 
+    // a 2. Id-val  rendelkező szezonhoz hozzáadunk egy bajnok elemet
     private static void addChampionToNo2Season(){
 
         NodeList szezonList = doc.getElementsByTagName("szezon");
@@ -92,6 +96,7 @@ public class DomModifyJPTJY2 {
         szezon.appendChild(bajnok);
     }
 
+    // a 2. Id val rendelkező szezont Id-ját 4 re változtatjuk
     private static void modifyNo2SeasonsId(){
 
         NodeList szezonokList = doc.getElementsByTagName("szezon");
@@ -100,18 +105,20 @@ public class DomModifyJPTJY2 {
         szezon.getAttributes().getNamedItem("sz_id").setTextContent("4");
     }
 
+    // minden szezon teljesz_szezon elemének értékét "Nem"-re állítjuk
     private static void modifySeasonsToNotWhole() {
         NodeList szezonList = doc.getElementsByTagName("szezon");
-        modifyElement(szezonList, "teljes_szezon", "Igen");
+        modifyElement(szezonList, "teljes_szezon", "Nem");
     }
 
+    // minden stábtag beosztását "Heac Coach"-ra állítjuk
     private static void modifyStaffMembersRoleToHeadCoach(){
         NodeList staffList = doc.getElementsByTagName("stabtag");
         modifyElement(staffList,"beosztas","Head Coach");
 
     }
 
-    //Element tag értékek modositasahoz metódus
+    //Element tag értékek modositasahoz felhasznált metódus
     public static void modifyElement(NodeList nodeList, String tagName, String newValue) {
         if (nodeList != null) {
             for (int i = 0; i < nodeList.getLength(); i++) {
@@ -126,6 +133,7 @@ public class DomModifyJPTJY2 {
         }
     }
 
+    // xml kiírása fájlba
     private static void writeXml(Document doc, FileOutputStream output)
             throws TransformerException, UnsupportedEncodingException {
 
