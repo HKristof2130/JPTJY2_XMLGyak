@@ -78,7 +78,7 @@ public class DomReadJPTJY2 {
                         fw.write("Nev: \n" + nev + "\n");
                         fw.write("Csapat: \n" + csapat + "\n");
                         fw.write("Pozíció: \n" + pozicio1 + "\n" + pozicio2 + "\n");
-                        fw.write("\n");
+                        fw.write("\n\n");
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
@@ -139,7 +139,7 @@ public class DomReadJPTJY2 {
                         fw.write("Nev: \n" + nev + "\n");
                         fw.write("Csapat: \n" + csapat + "\n");
                         fw.write("Beosztás: \n" + beosztas + "\n");
-                        fw.write("\n");
+                        fw.write("\n\n");
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
@@ -203,7 +203,7 @@ public class DomReadJPTJY2 {
                         fw.write("Nev: \n" + nev + "\n");
                         fw.write("Csapat: \n" + csapat + "\n");
                         fw.write("Szezon aktív edzőként: \n" + aktivSzezon + "\n");
-                        fw.write("\n");
+                        fw.write("\n\n");
                        } catch (IOException e) {
                         e.printStackTrace();
                     }
@@ -262,7 +262,7 @@ public class DomReadJPTJY2 {
                         fw.write("Csapat id:" + id + "\n");
                         fw.write("Aréna: \n" + arena + "\n");
                         fw.write("Bajnoki címek: \n" + bajnokiCimek + "\n");
-                        fw.write("\n");
+                        fw.write("\n\n");
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
@@ -322,7 +322,7 @@ public class DomReadJPTJY2 {
                         fw.write("Nevezett csapatok száma: \n" + nevezettCsapatokSzama + "\n");
                         fw.write("Teljes szezon: \n" + teljesSzezon + "\n");
                         fw.write("Szezon időtartama: \n" + szezonIdotartama + "\n");
-                        fw.write("\n");
+                        fw.write("\n\n");
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
