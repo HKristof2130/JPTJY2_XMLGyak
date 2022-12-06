@@ -11,6 +11,7 @@ import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 
 public class DomReadJPTJY2 {
@@ -68,6 +69,20 @@ public class DomReadJPTJY2 {
                     System.out.println("Pozíció : " + "Elsődleges : " + pozicio1 + " Másodlagos : " + pozicio2);
                     System.out.println("------------------");
 
+                    try (FileWriter fw = new FileWriter("DOMRead.txt", true);) {
+
+                        // fajlba iras megkezdése
+                        fw.write("Jatekos:------ \n");
+                        fw.write("Jatekos id:" + id1 + "\n");
+                        fw.write("Csapat id:" + id2 + "\n");
+                        fw.write("Nev: \n" + nev + "\n");
+                        fw.write("Csapat: \n" + csapat + "\n");
+                        fw.write("Pozíció: \n" + pozicio1 + "\n" + pozicio2 + "\n");
+                        fw.write("\n");
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+
                 }
             }
 
@@ -114,6 +129,20 @@ public class DomReadJPTJY2 {
                     System.out.println("Csapat : " + csapat);
                     System.out.println("Beosztás : " + beosztas);
                     System.out.println("------------------");
+
+                    try (FileWriter fw = new FileWriter("DOMRead.txt", true);) {
+
+                        // fajlba iras megkezdése
+                        fw.write("Stabtag:------ \n");
+                        fw.write("Stabtag id:" + id1 + "\n");
+                        fw.write("Csapat id:" + id2 + "\n");
+                        fw.write("Nev: \n" + nev + "\n");
+                        fw.write("Csapat: \n" + csapat + "\n");
+                        fw.write("Beosztás: \n" + beosztas + "\n");
+                        fw.write("\n");
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
 
                 }
             }
@@ -164,6 +193,20 @@ public class DomReadJPTJY2 {
                     System.out.println("Csapat : " + csapat);
                     System.out.println("Szezon aktív edzőként : " + aktivSzezon);
                     System.out.println("------------------");
+
+                    try (FileWriter fw = new FileWriter("DOMRead.txt", true);) {
+
+                        // fajlba iras megkezdése
+                        fw.write("Edzok:------ \n");
+                        fw.write("Edzo id:" + id1 + "\n");
+                        fw.write("Csapat id:" + id2 + "\n");
+                        fw.write("Nev: \n" + nev + "\n");
+                        fw.write("Csapat: \n" + csapat + "\n");
+                        fw.write("Szezon aktív edzőként: \n" + aktivSzezon + "\n");
+                        fw.write("\n");
+                       } catch (IOException e) {
+                        e.printStackTrace();
+                    }
                 }
             }
 
@@ -212,6 +255,18 @@ public class DomReadJPTJY2 {
                     System.out.println("Bajnoki címek : " + bajnokiCimek);
                     System.out.println("------------------");
 
+                    try (FileWriter fw = new FileWriter("DOMRead.txt", true);) {
+
+                        // fajlba iras megkezdése
+                        fw.write("Csapat:------ \n");
+                        fw.write("Csapat id:" + id + "\n");
+                        fw.write("Aréna: \n" + arena + "\n");
+                        fw.write("Bajnoki címek: \n" + bajnokiCimek + "\n");
+                        fw.write("\n");
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+
                 }
             }
 
@@ -258,6 +313,19 @@ public class DomReadJPTJY2 {
                     System.out.println("Teljes szezon : " + teljesSzezon);
                     System.out.println("Szezon idotartama : " + szezonIdotartama);
                     System.out.println("------------------");
+
+                    try (FileWriter fw = new FileWriter("DOMRead.txt", true);) {
+
+                        // fajlba iras megkezdése
+                        fw.write("Szezon:------ \n");
+                        fw.write("Szezon id:" + id + "\n");
+                        fw.write("Nevezett csapatok száma: \n" + nevezettCsapatokSzama + "\n");
+                        fw.write("Teljes szezon: \n" + teljesSzezon + "\n");
+                        fw.write("Szezon időtartama: \n" + szezonIdotartama + "\n");
+                        fw.write("\n");
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
                 }
             }
 
