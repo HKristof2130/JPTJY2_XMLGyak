@@ -16,7 +16,7 @@
       <xs:element type="xs:string" name="teljes_szezon"/>
       <xs:element type="idotartamType" name="idotartam"/>
     </xs:sequence>
-    <xs:attribute type="xs:int" name="sz_id" use="required"/>
+    <xs:attribute ref="sz_id" use="required"/>
   </xs:complexType>
 
   <xs:complexType name="csapatType">
@@ -25,7 +25,7 @@
       <xs:element type="xs:string" name="arena"/>
       <xs:element type="xs:int" name="bajnoki_cimek"/>
     </xs:sequence>
-    <xs:attribute type="xs:int" name="cs_id" use="required"/>
+    <xs:attribute ref="cs_id" use="required"/>
   </xs:complexType>
 
   <xs:complexType name="edzoType">
@@ -34,8 +34,8 @@
       <xs:element type="xs:string" name="csapat"/>
       <xs:element type="xs:int" name="aktiv_szezon"/>
     </xs:sequence>
-    <xs:attribute type="xs:int" name="e_id" use="required"/>
-    <xs:attribute type="xs:int" name="cs_e" use="required"/>
+    <xs:attribute ref="e_id" use="required"/>
+    <xs:attribute ref="cs_e" use="required"/>
   </xs:complexType>
 
   <xs:complexType name="stabtagType">
@@ -44,8 +44,8 @@
       <xs:element type="xs:string" name="csapat"/>
       <xs:element type="xs:string" name="beosztas"/>
     </xs:sequence>
-    <xs:attribute type="xs:int" name="s_id" use="required"/>
-    <xs:attribute type="xs:int" name="cs_s" use="required"/>
+    <xs:attribute ref="s_id" use="required"/>
+    <xs:attribute ref="cs_s" use="required"/>
   </xs:complexType>
 
   <xs:complexType name="jatekosType">
@@ -55,8 +55,8 @@
       <xs:element type="xs:byte" name="kor"/>
       <xs:element type="xs:string" name="poizicio" maxOccurs="unbounded" minOccurs="1"/>
     </xs:sequence>
-    <xs:attribute type="xs:int" name="j_id" use="required"/>
-    <xs:attribute type="xs:int" name="cs_j" use="required"/>
+    <xs:attribute ref="j_id" use="required"/>
+    <xs:attribute ref="cs_j" use="required"/>
   </xs:complexType>
 
   <xs:complexType name="nevezett_csapatType">
@@ -64,8 +64,8 @@
       <xs:element type="xs:byte" name="szezon_szama"/>
       <xs:element type="xs:string" name="csapat_neve"/>
     </xs:sequence>
-    <xs:attribute type="xs:int" name="sz_a_id" use="required"/>
-    <xs:attribute type="xs:int" name="sz_n_id" use="required"/>
+    <xs:attribute ref="sz_a_id" use="required"/>
+    <xs:attribute ref="sz_n_id" use="required"/>
   </xs:complexType>
 
   <xs:complexType name="nbaType">
@@ -90,4 +90,69 @@
 
     </xs:choice>
   </xs:complexType>
+
+  <!-- 
+    Attribútomok definiálása
+   -->
+  <xs:attribute type="xs:int" name="sz_id" />
+
+  <xs:attribute type="xs:int" name="cs_id" />
+
+  <xs:attribute type="xs:int" name="e_id" />
+  <xs:attribute type="xs:int" name="cs_e" />
+
+   <xs:attribute type="xs:int" name="s_id" />
+   <xs:attribute type="xs:int" name="cs_s" />
+
+   <xs:attribute type="xs:int" name="j_id" />
+   <xs:attribute type="xs:int" name="cs_j" />
+
+   <xs:attribute type="xs:int" name="sz_a_id" />
+   <xs:attribute type="xs:int" name="sz_n_id" />
+
+   <xs:element name="keys">
+
+    <!-- 
+        Elsodleges kulcsok
+       -->
+    <xs:key name="Szezon_id">
+      <xs:selector xpath="szezon"></xs:selector>
+      <xs:field xpath="@sz_id"></xs:field>
+    </xs:key>
+
+    <xs:key name="Csapat_id">
+      <xs:selector xpath="csapat"></xs:selector>
+      <xs:field xpath="@cs_id"></xs:field>
+    </xs:key>
+
+    <!-- 
+        Idegen kulcsok
+    -->
+    <xs:keyref refer="Csapat_id" name="csapat_stabtag">
+      <xs:selector xpath="stabtag"></xs:selector>
+      <xs:field xpath="@cs_s"></xs:field>
+    </xs:keyref>
+
+    <xs:keyref refer="Csapat_id" name="csapat_jatekos">
+      <xs:selector xpath="jatekos"></xs:selector>
+      <xs:field xpath="@cs_j"></xs:field>
+    </xs:keyref>
+
+    <xs:unique name="edzo_csapat">
+        <xs:selector xpath= "edzo"></xs:selector>
+        <xs:field xpath="cs_e"></xs:field>
+    </xs:unique>
+
+    <xs:keyref refer="Csapat_id" name="csapat_szezon">
+      <xs:selector xpath="nevezett_csapat"></xs:selector>
+      <xs:field xpath="@ksz_n_id"></xs:field>
+    </xs:keyref>
+
+    <xs:keyref refer="Szezon_id" name="szezon_csapat">
+      <xs:selector xpath="nevezett_csapat"></xs:selector>
+      <xs:field xpath="@sz_a_id"></xs:field>
+    </xs:keyref>
+
+  </xs:element>
+
 </xs:schema>

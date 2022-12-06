@@ -3,7 +3,7 @@
     <!--Az nba-ben lejegyzett idények -->
     <szezon sz_id="1">
         <nevezettcsapatok_szama>30</nevezettcsapatok_szama>
-        <teljes_szezon>Igen</teljes_szezon>
+        <teljes_szezon>Nem</teljes_szezon>
         <idotartam>
             <kezdet>2021-08-03</kezdet>
             <veg>2022-06-14</veg>
@@ -11,7 +11,7 @@
     </szezon>
     <szezon sz_id="4">
         <nevezettcsapatok_szama>30</nevezettcsapatok_szama>
-        <teljes_szezon>Igen</teljes_szezon>
+        <teljes_szezon>Nem</teljes_szezon>
         <idotartam>
             <kezdet>2019-08-07</kezdet>
             <veg>2020-10-13</veg>
@@ -19,7 +19,7 @@
     </szezon>
     <szezon sz_id="3">
         <nevezettcsapatok_szama>28</nevezettcsapatok_szama>
-        <teljes_szezon>Igen</teljes_szezon>
+        <teljes_szezon>Nem</teljes_szezon>
         <idotartam>
             <kezdet>2010-11-04</kezdet>
             <veg>2011-06-24</veg>
@@ -78,21 +78,18 @@
     <jatekos cs_j="1" j_id="1">
         <nev>Donovan Mitchell</nev>
         <csapat>Cleveland Cavaliers</csapat>
-        <kor>25</kor>
         <pozicio>SG</pozicio>
         <pozicio>PG</pozicio>
     </jatekos>
     <jatekos cs_j="2" j_id="2">
         <nev>Luka Doncic</nev>
         <csapat>Dallas Mavericks</csapat>
-        <kor>23</kor>
         <pozicio>PG</pozicio>
         <pozicio>SF</pozicio>
     </jatekos>
     <jatekos cs_j="1" j_id="3">
         <nev>Evan Mobley</nev>
         <csapat>Cleveland Cavaliers</csapat>
-        <kor>22</kor>
         <pozicio>PF</pozicio>
         <pozicio>C</pozicio>
     </jatekos>

@@ -1,0 +1,156 @@
+Szezon:------ 
+Szezon id:1
+Nevezett csapatok száma: 
+30
+Teljes szezon: 
+Igen
+Szezon időtartama: 
+2021-08-03 - 2021-08-03
+
+
+Szezon:------ 
+Szezon id:2
+Nevezett csapatok száma: 
+30
+Teljes szezon: 
+Nem
+Szezon időtartama: 
+2019-08-07 - 2019-08-07
+
+
+Szezon:------ 
+Szezon id:3
+Nevezett csapatok száma: 
+28
+Teljes szezon: 
+Nem
+Szezon időtartama: 
+2010-11-04 - 2010-11-04
+
+
+Csapat:------ 
+Csapat id:1
+Aréna: 
+Rocket Morgtage Fieldhouse
+Bajnoki címek: 
+1
+
+
+Csapat:------ 
+Csapat id:2
+Aréna: 
+FTX Arena
+Bajnoki címek: 
+3
+
+
+Csapat:------ 
+Csapat id:3
+Aréna: 
+American Airlines Center
+Bajnoki címek: 
+1
+
+
+Edzok:------ 
+Edzo id:1
+Csapat id:1
+Nev: 
+J.B Bickerstaff
+Csapat: 
+Clevleand Cavaliers
+Szezon aktív edzőként: 
+3
+
+
+Edzok:------ 
+Edzo id:2
+Csapat id:3
+Nev: 
+Jason Kidd
+Csapat: 
+Dallas Mavericks
+Szezon aktív edzőként: 
+2
+
+
+Edzok:------ 
+Edzo id:3
+Csapat id:2
+Nev: 
+Erik Spoelstra
+Csapat: 
+Miami Heat
+Szezon aktív edzőként: 
+15
+
+
+Stabtag:------ 
+Stabtag id:1
+Csapat id:2
+Nev: 
+Chris Quinn
+Csapat: 
+Miami Heat
+Beosztás: 
+Assistant Coach
+
+
+Stabtag:------ 
+Stabtag id:2
+Csapat id:2
+Nev: 
+Andy Elisburg
+Csapat: 
+Miami Heat
+Beosztás: 
+Senior Vice President
+
+
+Stabtag:------ 
+Stabtag id:3
+Csapat id:1
+Nev: 
+Luke Walton
+Csapat: 
+Cleveland Cavaliers
+Beosztás: 
+Assistant Coach
+
+
+Jatekos:------ 
+Jatekos id:1
+Csapat id:1
+Nev: 
+Donovan Mitchell
+Csapat: 
+Cleveland Cavaliers
+Pozíció: 
+SG
+PG
+
+
+Jatekos:------ 
+Jatekos id:2
+Csapat id:2
+Nev: 
+Luka Doncic
+Csapat: 
+Dallas Mavericks
+Pozíció: 
+PG
+SF
+
+
+Jatekos:------ 
+Jatekos id:3
+Csapat id:1
+Nev: 
+Evan Mobley
+Csapat: 
+Cleveland Cavaliers
+Pozíció: 
+PF
+C
+
+
